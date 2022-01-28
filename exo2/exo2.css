@@ -1,0 +1,118 @@
+body
+{
+    background-color: slategray;
+}
+
+header
+{
+    margin-left: 30px;
+    border-bottom: 2px solid white;
+}
+
+h1
+{
+    margin-bottom: 0;
+}
+
+h5
+{
+    margin-top: 0;
+    margin-bottom: 0;
+    color: black;
+}
+
+.cloudy
+{
+    margin-left: 0;
+    padding-top: 0;
+    height: 80px;
+    width: 157px;
+    float: left;
+}
+
+.nuageux
+{
+    /*border: 2px solid white;*/
+    float: left;
+}
+
+.cloudy p
+{
+    margin-left: 75px;
+    font-size: 2.5em;
+    margin-top: 0;
+}
+
+.container
+{
+    border-bottom: 2px solid white;
+    display: flex;
+    margin-top: 16px;
+    margin-left: 30px;
+    justify-content: space-between;
+}
+
+/*.eclair
+{
+    border: 2px solid white;
+}*/
+
+.jour, .temperature, .pollen
+{
+    font-size: 1.2em;
+    font-weight: bold;
+    width: 100px;
+}
+
+@media screen and (min-width: 900px)
+{
+    .container
+    {
+        display: flex;
+        flex-direction: column;
+        width: 14%;
+        border: none;
+    }
+
+    *
+    {
+        margin: 0;
+    }
+
+    section
+    {
+        width: 100%;
+        display: flex;
+        justify-content: flex-start;
+        border-bottom: 2px solid white;
+        margin-left: 30px;
+        padding-bottom: 20px;
+    }
+    
+}
+
+@media screen and (min-width: 640px)
+{
+    .jour 
+    {
+        width:60px;
+    }
+
+    .temperature, .eclair
+    {
+        width: 10%;
+    }
+
+    .pollen
+    {
+        width: 100px;
+    }
+
+    .info
+    {
+        text-align: center;
+    }
+}
+
+
+
